@@ -4,7 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const listController = require("./controllers/ListController");
 
-// db instance connection
+// database instance connection
 require("./config/db");
 
 const app = express();
@@ -22,7 +22,7 @@ app
 
 app
   .route("/lists/:itemId")
-  .get(listController.readItem)
+  .get(listController.getItem)
   .put(listController.updateItem)
   .delete(listController.deleteItem);
 
