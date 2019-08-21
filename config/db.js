@@ -17,5 +17,4 @@ mongoose.connect(dbURI, options).then(
   }
 );
 
-// require any models
 require("../api/models/List");
