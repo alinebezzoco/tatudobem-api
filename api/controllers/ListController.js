@@ -22,7 +22,7 @@ exports.createNewItem = (req, res) => {
 };
 
 
-exports.readItem = (req, res) => {
+exports.getItem = (req, res) => {
   List.findById(req.params.itemId, (err, list) => {
     if (err) {
       res.status(500).send(err);
