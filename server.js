@@ -1,28 +1,19 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
-const listController = require("./api/controllers/ListController");
-
-// database instance connection
-require("./config/db");
+const listRoutes = require("./api/routes/ListRoutes");
 
 const app = express();
 
 const port = process.env.PORT || 3000;
+
+// database connection
+require("./config/db");
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// API endpoints
-app
-  .route("/lists")
-  .get(listController.listAll)
-  .post(listController.createNewItem);
-
-app
-  .route("/lists/:itemId")
-  .get(listController.getItem)
-  .put(listController.updateItem)
-  .delete(listController.deleteItem);
+listRoutes(app);
 
 app.listen(port, () => {
   console.log(
