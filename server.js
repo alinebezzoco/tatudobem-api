@@ -3,7 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const listController = require("./api/controllers/ListController");
 
-// db instance connection
+// database instance connection
 require("./config/db");
 
 const app = express();
@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// API ENDPOINTS
+// API endpoints
 app
   .route("/lists")
   .get(listController.listAll)
@@ -20,7 +20,9 @@ app
 
 app
   .route("/lists/:itemId")
-  .get(listController.readItem)
+  .get(listController.getItem)
+  .put(listController.updateItem)
+  .delete(listController.deleteItem);
 
 app.listen(port, () => {
   console.log(
