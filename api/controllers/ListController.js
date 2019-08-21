@@ -2,7 +2,7 @@
 
 const List = require("../models/List");
 
-exports.listAll = (req, res) => {
+exports.getAll = (req, res) => {
   List.find({}, (err, list) => {
     if (err) {
       res.status(500).send(err);
