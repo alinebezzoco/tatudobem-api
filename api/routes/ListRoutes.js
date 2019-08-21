@@ -5,7 +5,7 @@ module.exports = (app) => {
 
 app
   .route("/lists")
-  .get(listController.listAll)
+  .get(listController.getAll)
   .post(listController.createNewItem);
 
 app
