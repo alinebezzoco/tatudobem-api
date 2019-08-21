@@ -9,28 +9,22 @@ const ListSchema = new Schema({
     required: true
   },
   description: {
-    type: String,
-    default: null
+    type: String
   },
   address: {
-    type: String,
-    default: null
+    type: String
   },
   phone: {
-    type: String,
-    default: null
+    type: String
   },
   email: {
-    type: String,
-    default: null
+    type: String
   },
   city: {
-    type: String,
-    default: null
+    type: String
   },
   uf: {
-    type: String,
-    default: null
+    type: String
   }
 });
 
