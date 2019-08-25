@@ -48,7 +48,7 @@ const config = {
     ip: process.env.IP || undefined,
     port: process.env.PORT || 8080,
     mongo: {
-      uri: process.env.MONGODB_URI || 'mongodb+srv://ttbapiadmin:fd1jmBDcOUgWHjDA@cluster0-ibqc7.mongodb.net/test?retryWrites=true&w=majority'
+      uri: process.env.MONGODB_URI || 'mongodb://ttbadminuser_666:GXidSLb@Dr4uyJQ@ds135207.mlab.com:35207/heroku_4vh0j4nd'
     }
   }
 }
