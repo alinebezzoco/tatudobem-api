@@ -1,22 +1,18 @@
+import http from 'http'
+import { env, mongo, port, ip, apiRoot } from './config'
+import mongoose from './services/mongoose'
+import express from './services/express'
+import api from './api'
 
-const express = require("express");
-const bodyParser = require("body-parser");
-const listRoutes = require("./api/routes/ListRoutes");
+const app = express(apiRoot, api)
+const server = http.createServer(app)
 
-const app = express();
+mongoose.connect(mongo.uri)
+mongoose.Promise = Promise
 
-const port = process.env.PORT || 8080;
-
-// database connection
-require("./config/db");
-
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
-listRoutes(app);
-
-app.listen(port, () => {
-  console.log(
+setImmediate(() => {
+  server.listen(port, ip, () => {
+    console.log(
       `
                                                                   
       888                 888                  888              888                                                   d8b 
@@ -35,4 +31,7 @@ app.listen(port, () => {
         Server running at http://localhost:${port}                                                                                                                               
       `,
     );
-});
+  })
+})
+
+export default app
