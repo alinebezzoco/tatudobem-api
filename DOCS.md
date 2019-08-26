@@ -1,4 +1,24 @@
-# Tá tudo bem? API v1.0.0
+# Tá tudo bem? API v1.0.0 
+
+## Rodando o projeto local
+
+- Dê o `npm install` para instalar as dependências do projeto; 
+
+- Antes de mais nada você precisa instalar o [MongoDB](https://www.mongodb.com/) para conseguir rodar o banco de dados local; 
+- Depois de instalado basta rodar o comando abaixo: 
+
+```bash
+$ mongod
+```
+
+- Logo após de iniciar o MongoDB rode o projeto com o seguinte comando:
+
+```bash
+$ npm run dev
+``` 
+
+- O projeto irá rodar com o `http://localhost:9000`. 
+
 
 ## Adicionar um novo item
 

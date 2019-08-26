@@ -38,7 +38,7 @@ const config = {
   test: { },
   development: {
     mongo: {
-      uri: 'mongodb+srv://ttbapiadmin:fd1jmBDcOUgWHjDA@cluster0-ibqc7.mongodb.net/test?retryWrites=true&w=majority',
+      uri: 'mongodb://localhost:27017/tatudobem-api',
       options: {
         debug: true
       }
