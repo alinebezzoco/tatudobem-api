@@ -1,20 +1,8 @@
 # Tá tudo bem? API v1.0.0
-## API desenvolvida com Node.JS que lista todas as universidades e instituições que oferecem atendimento psicológico gratuito. 
 
+# Listagem de todos os items
 
-- [List](#list)
-	- [Create list](#create-list)
-	- [Delete list](#delete-list)
-	- [Retrieve list](#retrieve-list)
-	- [Retrieve lists](#retrieve-lists)
-	- [Update list](#update-list)
-	
-
-
-# List
-
-## Create list
-
+## Adicionar um novo item
 
 
 	POST /lists
@@ -22,64 +10,64 @@
 
 ### Parameters
 
-| Name    | Type      | Description                          |
+| Nome    | Tipo      | Descrição                          |
 |---------|-----------|--------------------------------------|
-| name			| 			|  <p>List's name.</p>							|
-| description			| 			|  <p>List's description.</p>							|
-| address			| 			|  <p>List's address.</p>							|
-| phone			| 			|  <p>List's phone.</p>							|
-| email			| 			|  <p>List's email.</p>							|
-| city			| 			|  <p>List's city.</p>							|
-| uf			| 			|  <p>List's uf.</p>							|
+| name			| String 			|  <p>Nome da instituição</p>							|
+| description	| String 			|  <p>Sobre a instituição</p>							|
+| address		| String 			|  <p>Endereço</p>							|
+| phone			| String			|  <p>Telefone</p>							|
+| email			| String			|  <p>Email</p>							|
+| city			| String		|  <p>Cidade</p>							|
+| uf			| String			|  <p>Estado</p>							|
 
-## Delete list
+
+## Excluir item
 
 
 
 	DELETE /lists/:id
 
 
-## Retrieve list
+## Detalhes do item
 
 
 
 	GET /lists/:id
 
 
-## Retrieve lists
+## Recuperar lista
 
 
 
 	GET /lists
 
 
-### Parameters
+### Parâmetros
 
-| Name    | Type      | Description                          |
+| Nome    | Tipo      | Descrição                          |
 |---------|-----------|--------------------------------------|
-| q			| String			| **optional** <p>Query to search.</p>							|
-| page			| Number			| **optional** <p>Page number.</p>							|
-| limit			| Number			| **optional** <p>Amount of returned items.</p>							|
-| sort			| String[]			| **optional** <p>Order of returned items.</p>							|
-| fields			| String[]			| **optional** <p>Fields to be returned.</p>							|
+| q			| String			| **optional** <p>Query para busca</p>							|
+| page			| Number			| **optional** <p>Paginação</p>							|
+| limit			| Number			| **optional** <p>Quantidade de itens devolvidos</p>							|
+| sort			| String[]			| **optional** <p>Ordenação dos itens devolvidos</p>							|
+| fields			| String[]			| **optional** <p>Campos a serem retornados</p>							|
 
-## Update list
+
+## Atualizar um item
 
 
 
 	PUT /lists/:id
 
+### Parâmetros
 
-### Parameters
-
-| Name    | Type      | Description                          |
+| Nome    | Tipo      | Descrição                          |
 |---------|-----------|--------------------------------------|
-| name			| 			|  <p>List's name.</p>							|
-| description			| 			|  <p>List's description.</p>							|
-| address			| 			|  <p>List's address.</p>							|
-| phone			| 			|  <p>List's phone.</p>							|
-| email			| 			|  <p>List's email.</p>							|
-| city			| 			|  <p>List's city.</p>							|
-| uf			| 			|  <p>List's uf.</p>							|
-
+| name			| String			|  <p>Nome da instituição</p>							|
+| description	| String 			|  <p>Sobre a instituição</p>							|
+| address		| String			|  <p>Endereço</p>							|
+| phone			| String			|  <p>Telefone</p>							|
+| email			| String			|  <p>Email</p>							|
+| city			| String			|  <p>Cidade</p>							|
+| uf			| String		|  <p>Estado</p>							|
 
