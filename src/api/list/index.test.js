@@ -7,9 +7,9 @@ const app = () => express(apiRoot, routes)
 
 let list
 
-beforeEach(async () => {
+beforeEach(inject(async () => {
   list = await List.create({})
-})
+}));
 
 test('POST /lists 201', async () => {
   const { status, body } = await request(app())
