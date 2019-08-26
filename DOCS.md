@@ -33,7 +33,7 @@
 	GET /lists/:id
 
 
-## Recuperar lista
+## Listar os items
 
 
 
