@@ -1,24 +1,22 @@
 # Tá tudo bem? API v1.0.0
 
-# Listagem de todos os items
-
 ## Adicionar um novo item
 
 
 	POST /lists
 
 
-### Parameters
+### Parâmetros
 
-| Nome    | Tipo      | Descrição                          |
+| Nome    | Tipo      | Descrição                          	|
 |---------|-----------|--------------------------------------|
-| name			| String 			|  <p>Nome da instituição</p>							|
-| description	| String 			|  <p>Sobre a instituição</p>							|
-| address		| String 			|  <p>Endereço</p>							|
-| phone			| String			|  <p>Telefone</p>							|
-| email			| String			|  <p>Email</p>							|
-| city			| String		|  <p>Cidade</p>							|
-| uf			| String			|  <p>Estado</p>							|
+| name			| String 			|  Nome da instituição			|
+| description	| String 			|  Sobre a instituição			|
+| address		| String 			|  Endereço						|
+| phone			| String			|  Telefone						|
+| email			| String			|  Email						|
+| city			| String			|  Cidade						|
+| uf			| String			|  Estado						|
 
 
 ## Excluir item
@@ -46,11 +44,11 @@
 
 | Nome    | Tipo      | Descrição                          |
 |---------|-----------|--------------------------------------|
-| q			| String			| **optional** <p>Query para busca</p>							|
-| page			| Number			| **optional** <p>Paginação</p>							|
-| limit			| Number			| **optional** <p>Quantidade de itens devolvidos</p>							|
-| sort			| String[]			| **optional** <p>Ordenação dos itens devolvidos</p>							|
-| fields			| String[]			| **optional** <p>Campos a serem retornados</p>							|
+| q			| String			| **opcional** Query para busca						|
+| page			| Number			| **opcional** Paginação						|
+| limit			| Number			| **opcional** Quantidade de itens devolvidos						|
+| sort			| String[]			| **opcional** Ordenação dos itens devolvidos						|
+| fields			| String[]			| **opcional** Campos a serem retornados						|
 
 
 ## Atualizar um item
@@ -63,11 +61,11 @@
 
 | Nome    | Tipo      | Descrição                          |
 |---------|-----------|--------------------------------------|
-| name			| String			|  <p>Nome da instituição</p>							|
-| description	| String 			|  <p>Sobre a instituição</p>							|
-| address		| String			|  <p>Endereço</p>							|
-| phone			| String			|  <p>Telefone</p>							|
-| email			| String			|  <p>Email</p>							|
-| city			| String			|  <p>Cidade</p>							|
-| uf			| String		|  <p>Estado</p>							|
+| name			| String			| Nome da instituição							|
+| description	| String 			| Sobre a instituição							|
+| address		| String			| Endereço							|
+| phone			| String			| Telefone							|
+| email			| String			| Email							|
+| city			| String			| Cidade							|
+| uf			| String		| Estado							|
 
