@@ -1,5 +1,5 @@
-# tatudobem-api v0.0.0
-
+# Tá tudo bem? API v1.0.0
+## API desenvolvida com Node.JS que lista todas as universidades e instituições que oferecem atendimento psicológico gratuito. 
 
 
 - [List](#list)
