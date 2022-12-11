@@ -50,7 +50,7 @@
     "bodymen": "^1.0.3",
     "compression": "^1.7.1",
     "cors": "^2.8.4",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "express-force-ssl": "^0.3.2",
     "mongoose": "^5.7.5",
     "mongoose-create-unique": "^0.4.4",
